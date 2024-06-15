@@ -42,9 +42,6 @@ def generate_pdf(baseurl, start, end, pdf_filename):
     pdf.output(pdf_filename)
 
 def main():
-    print("Welcome To Use The PEP Textbook Downloading Tool")
-    print("What you need to do is to EXPOLRE https://jc.pep.com.cn/")
-    print("CHOOSE a textbook, COPY its URL and set START and END page")
     BOOK_URL = input("Please input the book URL:")
     START_PAGE = int(input("Please input the start page:"))
     END_PAGE = int(input("Please input the end page:"))
@@ -62,4 +59,15 @@ def main():
         shutil.rmtree('.src', ignore_errors=True)
     os.system("pause")
 if __name__ == "__main__":
-    main()
+    i=1
+    print("Welcome To Use The PEP Textbook Downloading Tool")
+    print("What you need to do is to EXPOLRE https://jc.pep.com.cn/")
+    print("CHOOSE a textbook, COPY its URL and set START and END page")
+    while(i):
+        switch = input("Do you want to download a textbook? (Y/N)")
+        if switch == "Y" or switch == "y":
+            main()
+        else:
+            i=0
+            print("Thank you for using the PEP Textbook Downloading Tool")
+            os.system("pause")
