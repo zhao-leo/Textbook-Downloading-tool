@@ -23,7 +23,7 @@ def generate_pep_pdf(baseurl, start, end, pdf_filename):
         pdf.add_page()
         pdf.image(image_filepath, x=0, y=0, w=210, h=297)
     pdf.output(pdf_filename)
-    print(f"PDF generated successfully: {pdf_filename}.pdf")
+    print(f"PDF generated successfully: {pdf_filename}")
     shutil.rmtree('.temp', ignore_errors=True)
 
 def generate_bnu_pdf(baseurl, start, end, pdf_filename, coverurl):
@@ -40,7 +40,7 @@ def generate_bnu_pdf(baseurl, start, end, pdf_filename, coverurl):
         pdf.add_page()
         pdf.image(image_filepath, x=0, y=0, w=210, h=297)
     pdf.output(pdf_filename)
-    print(f"PDF generated successfully: {pdf_filename}.pdf")
+    print(f"PDF generated successfully: {pdf_filename}")
     shutil.rmtree('.temp', ignore_errors=True)
 
 if __name__ == "__main__":
