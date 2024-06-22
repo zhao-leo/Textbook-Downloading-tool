@@ -1,5 +1,5 @@
 /build
+/dist
 /.temp
 *.pdf
 *.html
-/dist
