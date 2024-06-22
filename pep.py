@@ -34,8 +34,8 @@ def pep_main():
     os.system("pause")
 
 if __name__ == "__main__":
-    print("Hte part of the code is to download the book from https://jc.pep.com.cn.")
-    print("What you need to do is to EXPOLRE https://jc.pep.com.cn")
+    print("Hte part of the code is to download the book from https://jc.pep.com.cn .")
+    print("What you need to do is to EXPOLRE https://jc.pep.com.cn .")
     print("CHOOSE a textbook, COPY its URL and set START and END page")
     while True:
         pep_main()

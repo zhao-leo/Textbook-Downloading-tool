@@ -37,8 +37,8 @@ def bnu_main():
     os.system("pause")
 
 if __name__ == "__main__":
-    print("The part of the code is to download the book from http://www.100875.com.cn.")
-    print("What you need to do is to EXPOLRE http://www.100875.com.cn/show/resource.html")
+    print("The part of the code is to download the book from http://www.100875.com.cn .")
+    print("What you need to do is to EXPOLRE http://www.100875.com.cn/show/resource.html .")
     print("CHOOSE a textbook, COPY its URL and set START and END page")
     while True:
         bnu_main()

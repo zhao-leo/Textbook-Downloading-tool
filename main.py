@@ -3,9 +3,9 @@ import pep
 
 print("Welcome to the textbook downloader!")
 print("Now support the following sources:")
-print("1. PEP (https://jc.pep.com.cn)")
-print("2. BNU (http://www.100875.com.cn/show/resource.html)")
-print("3. Exit (Exit the program.)")
+print("1. PEP ( https://jc.pep.com.cn )")
+print("2. BNU ( http://www.100875.com.cn/show/resource.html )")
+print("3. Exit ( Exit the program. )")
 source = input("Please input the source of the book (1/2/3):")
 while True:
     if source == "3":

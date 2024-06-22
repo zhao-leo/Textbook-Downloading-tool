@@ -44,7 +44,7 @@ def generate_bnu_pdf(baseurl, start, end, pdf_filename, coverurl):
     shutil.rmtree('.temp', ignore_errors=True)
 
 if __name__ == "__main__":
-    print("The part of the code is to download the book from http://www.100875.com.cn/show/resource.html and https://jc.pep.com.cn.")
+    print("The part of the code is to download the book from http://www.100875.com.cn/show/resource.html and https://jc.pep.com.cn .")
     print("You can use the following functions to download the book:")
     source = input("Please input the source of the book (PEP/BNU):")
     if source == "PEP" or source == "pep":
