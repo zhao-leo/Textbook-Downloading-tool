@@ -2,4 +2,4 @@
 /.temp
 *.pdf
 *.html
-/dist/*.pdf
+/dist
