@@ -11,14 +11,14 @@ def main():
         exit(0)
 
     if "book.pep.com.cn" in book_url:
-        book = pep.PEPbook(book_url)
+        book = pep.get_pep_book(book_url)
         book_download = downloader(book.pagelist, PATH)
         book_download.start()
         book_download.join()
         generate_pdf(PATH, book.title)
 
     elif "100875.com.cn" in book_url:
-        book = bnu.BNUbook(book_url)
+        book = bnu.get_bnu_book(book_url)
         book_download = downloader(book.pagelist, PATH)
         book_download.start()
         book_download.join()
