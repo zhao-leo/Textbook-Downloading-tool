@@ -8,9 +8,9 @@ class downloader(threading.Thread):
     '''
     downloader class
         args:
-        thread: int, the number of threads
         pagelist: list, the list of the urls
-        TempPath(optional): str, the path of the temp folder
+        TempPath: str, the path of the temp folder
+        thread(optional): int, the number of threads. Default is 10
     Use:
         downloader_instance = downloader(thread_count, pagelist)
         downloader_instance.start()

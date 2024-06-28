@@ -56,4 +56,6 @@ class bookitem(object):
             for item in data:
                 bookitem(item['source_url'], item['title'], item['publisher'], item['pagelist'])
 
-
+    def __del__(self):
+        bookitem.BookCount -= 1
+        bookitem.bookshelf.remove(self)
