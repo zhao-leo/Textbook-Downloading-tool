@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from source.book_source import pep, bnu
+from source.book_source import bnu
 from source.DownAndGenerate.downloader import downloader
 from source.DownAndGenerate.generatePDF import generate_pdf
 
@@ -10,13 +10,6 @@ def main():
         print('Bye!')
         exit(0)
 
-    if "book.pep.com.cn" in book_url:
-        book = pep.get_pep_book(book_url)
-        book_download = downloader(book.pagelist, PATH)
-        book_download.start()
-        book_download.join()
-        generate_pdf(PATH, book.title)
-
     elif "100875.com.cn" in book_url:
         book = bnu.get_bnu_book(book_url)
         book_download = downloader(book.pagelist, PATH)
@@ -26,8 +19,7 @@ def main():
 
 print("Welcome to the textbook downloader!")
 print("Now support the following sources:")
-print("1. PEP ( https://jc.pep.com.cn )")
-print("2. BNU ( http://www.100875.com.cn/show/resource.html )")
+print("1. BNU ( http://www.100875.com.cn/show/resource.html )")
 print("Press 0 to Exit the program.")
 print("Please input the URL and we will auto download the book for you.")
 while True:
